@@ -1,0 +1,19 @@
+# Copyright (c) 2023 Joseph Hale
+# 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+---  # Denotes the start of this YAML document. https://yaml.org/spec/1.2/spec.html#id2760395
+name: Athena
+main: dev._vinzsan.athena.AthenaPlugin
+bootstrapper: dev._vinzsan.athena.AthenaBootstrapper
+version: 0.1.0
+api-version: '26.2'
+dependencies:
+  server:
+    ProtocolLib:
+      load: BEFORE
+      required: true
+      join-classpath: true
+... # Denotes the end of this YAML document. https://yaml.org/spec/1.2/spec.html#id2760395
